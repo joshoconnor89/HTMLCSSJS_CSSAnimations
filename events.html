@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+    function addAnimationHandlers() {
+        var box = document.getElementById('box');
+        box.addEventListener('webkitAnimationStart', function (){ alert('Animation started.'); }, false);
+        box.addEventListener('webkitAnimationIteration', function (){ alert('Animation iterated.'); }, false);
+        box.addEventListener('webkitAnimationEnd', function (){ alert('Animation ended.'); }, false);
+    }
+</script>
+<style>
+    @-webkit-keyframes changeScale {
+        0% {
+            -webkit-transform: scale(1.0);
+        }
+        50% {
+            -webkit-transform: scale(0.3);
+        }
+        100% {
+            -webkit-transform: scale(1.0);
+        }
+    }
+
+    #box {
+        height: 300px;
+        width: 300px;
+        background-color: purple;
+        -webkit-animation-name: changeScale;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-iteration-count: 3;
+    }
+</style>
+<meta name="viewport" content="width=device-width">
+</head>
+<body onload="addAnimationHandlers();">
+    <div id="box"></div>
+</body>
+</html>

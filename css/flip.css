@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {margin:0; padding:0; width:320px; font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; background-color:#9090A6;}
+
+h4 {padding-left:10px;}
+
+#frontface {
+	position: absolute;
+	border: 2px solid #07048C;
+	top: 10px;
+	left: 60px;
+	width: 200px;
+	height: 200px;
+	/*rotateY is flipping its, flip Y axis */
+	transform:rotateY(0deg);
+	
+	/*transition-property:all -> anything that changes, make it a part of the transition */
+	transition-property:all;
+	transition-duration:1s;
+	transition-timing-function:default;
+}
+
+
+/*the back part is facing sideways due to -90deg rotateY.  The side isnt even a pixel so it is not visible*/
+#backface {
+	position: absolute;
+	border: 2px solid #07048C;
+	top: 10px;
+	left: 60px;
+	width: 200px;
+	height: 200px;
+	transform:rotateY(-90deg);
+	transition-property:all;
+	transition-delay:1s;
+	transition-duration:1s;
+	transition-timing-function:default;
+}
+
+
+
+

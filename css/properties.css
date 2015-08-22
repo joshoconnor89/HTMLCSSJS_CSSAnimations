@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+* {margin:0; padding:0;}
+
+body {background:#000; font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;}
+
+.wrapper {margin:0 auto; width:600px; height:auto; min-height:600px; background:#ffe; padding-bottom:20px;}
+
+button {width:100px; height:40px; font-size:18px; background:#E19807; display:block; border-radius:10px; margin:auto;}
+
+header {height:20px; clear:both;}
+
+nav {background:#666666; display:block;}
+nav button {}
+nav button {float:left; width:200px; border-radius:0;}
+
+h2 {line-height:40px; font-size:24px; padding-left:20px; cursor:pointer;}
+
+p {line-height:18px; font-size:14px; padding:20px;}
+
+#popup {margin:200px auto; width:400px; height:400px; border:2px solid #4A4AB3; background:#fff; border-radius:10px; opacity:1;}
+
+#popup p{height:260px;}
+
+#popup button {margin:auto;}
+
+#mover {
+	background-color:#fff;
+	position: fixed;
+	width:180px;
+	padding:10px;
+	top:200px;
+	
+	/*
+	left-> move this object over -200 
+	transition->moves object in transition. 2s is the speed.  5s is slower than 2s
+	*/
+	left:-200px;
+	transition:left 2s;
+	
+}
+
+
+
+#expander {
+	margin:10px auto;
+	width:400px;
+	height:40px;
+	overflow:hidden;
+	border: 2px solid #4a4ab3;
+	border-radius:10px;
+	transition:height 650ms;
+	
+}
+
+
+#modalbg {
+	width:0;
+	height:0;
+	background-color:rgba(125,171,207,0.7);
+	opacity:0;
+	z-index:101;
+	position:fixed;
+	top:0;
+	left:0;
+	transition:opacity 2s;
+	
+}
+
+
+
+
+

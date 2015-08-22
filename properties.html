@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Properties</title>
+<link rel="stylesheet" type="text/css" href="css/properties.css">
+
+<!--Linking Javascript file which has all our scripts-->
+<script src="js/properties.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+<nav>
+<button onclick="fadeIn()">Fade It</button>
+<button onclick="moveIt()">Move It</button>
+<button onclick="expandIt()">Expand It</button>
+</nav>
+<header>&nbsp;</header>
+<div id="expander">
+<h2 onclick="expandIt()">Click to Expand</h2>
+<p>Here's the content you were missing. Lots and lots of content and words that spell out the details and are hidden until you click on the header.</p>
+<button onclick="squishIt()">Close</button>
+</div>
+</div>
+
+<div id="mover">
+<h2>I'm a Mover</h2>
+<p>Move it along</p>
+<button onclick="moveBack()">&laquo;</button>
+</div>
+
+<div id="modalbg">
+<div id="popup">
+<h2>Div Header</h2>
+<p>Paragraphs of information, messaging</p>
+<button onclick="fadeOut()">Close</button>
+</div>
+</div>
+</body>
+</html>

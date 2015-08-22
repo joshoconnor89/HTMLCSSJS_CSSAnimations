@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#mydiv {
+	margin:20px auto;
+	width:400px;
+	height:400px;
+	/*Transform: 
+	rotate->Rotate it 30 degrees
+	translate-> Move it, similar to margin
+	skew->Stretch
+	
+	transform:rotate(30deg)translate(50px,100px)skew(30deg,20deg);
+	*/
+}
+
+h1 {text-align:center;}
+
+img {
+	display:block; 
+	margin:auto;
+	/*Scale ->relative measurament, make width half as much, height 3/4 as much */
+	transform:skew(30deg,20deg) scale(0.5,0.75);
+	box-shadow: 10px 10px #999;
+}
+
+img#image2 {
+	z-index:101;
+	transform:skew(-10deg,0) scale(1,1)translate(50px,-60px);
+	box-shadow: 10px 10px #999;
+}
